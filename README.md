@@ -1,6 +1,6 @@
 
 # MyWorld.com
-A web application to Ecommarce online business.
+A web application for Ecommarce business.
 
 # disc- 
 full Functionalities by using MERN stack. made by me in 5 days.  
