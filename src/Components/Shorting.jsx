@@ -10,20 +10,18 @@ import {
     sort_rating_l_to_h,
   } from "../Redux/Actions/ProductAction";
   import { useDispatch, useSelector } from "react-redux";
-  import { useEffect } from 'react';
+
   
   const Shorting = () => {
       const [select, setSelect] = React.useState("");
       
       const Dispatch = useDispatch();
       const { Data } = useSelector((store) => store.productsFatch);
-
-
-  
   
        
     const handleChange = (e) => {
         setSelect(e.target.value);
+        console.log(e.target.value)
         if (e.target.value == "PriceAss") {
           Dispatch(sort_price_l_to_h());
         } else if (e.target.value == "PriceDis") {

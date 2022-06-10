@@ -29,7 +29,7 @@ export const productReducer = (store = InitialState , {type , payload})=>{
         }
         case SORT_RATING_H_TO_L : let SortData4 = store.Data.sort((a,b)=>{return b.rating.rate  - a.rating.rate }) 
         return{
-           ...store , Data:[...SortData4]
+           ...store , Data:[...SortData4] 
         }
         case SORT_NAME_ASS: let nameSort = store.Data.sort((a,b)=>{
             let str1  = a.title
